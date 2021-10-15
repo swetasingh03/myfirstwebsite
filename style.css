@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+ 
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* header section start */
+header{
+    width: 100%;
+   height:100vh;
+    background-image: linear-gradient(rgba(0, 0,0,0.2),rgba(0, 0, 0,0.2)),url("https://images.unsplash.com/photo-1619199748576-75ae8022c73f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(128, 79, 0, 0.239);
+    width: 100%;
+    height:10vh;
+    position: fixed;
+}
+.navbar .heading{
+    color:white;
+    font-size: 1.6rem;
+    border-bottom: 2px solid orange;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+   
+    margin: 0px 10px;
+}
+.navbar ul li a{
+    padding: 5px 30px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    color: white;
+
+}
+.navbar .active{
+    background-color:rgba(255, 166, 0, 0.479)
+}
+.navbar ul li a:hover{
+    background-color:rgba(255, 166, 0, 0.479);
+    transition: .5s;
+}
+header .content{
+    color:white;
+    position: absolute;
+    top:30%;
+    left:15%;
+    font-size: 1.5rem;
+    margin-top:3px;
+}
+header .content p{
+    letter-spacing:1px;
+}
+header .content button{
+    margin-top: 3rem;
+    padding: 20px 2.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    transition: .5s;
+    border:1px solid white;
+    background-color:transparent;
+    cursor: pointer;
+letter-spacing:5px;
+
+}
+header .content button:hover{
+    background-color: tomato;
+    border:transparent;
+}
+/* header section complete */
+
+/* section start */
+section{
+    width: 100%;
+    height:100%;
+    
+}
+section .contain{
+    width:90%;
+    height:auto;
+    display: flex;
+    margin: 3rem auto;
+    gap:4rem;
+}
+section .contain img{
+    box-shadow: 20px 15px 0px rgb(134, 133, 131);
+}
+section .contain p{
+    font-size: 18px;
+}
+section .contain h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* section complete */
+
+/* second section start */
+
+section h1{
+    text-align: center;
+    font-size: 3rem;
+}
+section .row{
+    width:90%;
+    display: flex;
+    margin:30px 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section .row .box{
+    background-color: rgb(243, 162, 12);
+    text-align: center;
+    padding:2rem 4rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+section .row .box p{
+    font-size: 20px;
+    font-weight: bold;
+    }
+section .row .box:hover{
+    box-shadow: 0px 0px 8px grey;
+}
+
+/* section compelete */
+
+
+/* project section start */
+section .project{
+width:90%;
+display: flex;
+margin:2rem;
+text-align: center;
+
+}
+
+section .project .img{
+    margin:1rem 2rem;
+}
+section .project .img img{
+    border-radius: 3px;
+}
+section .project .img h3{
+    font-size: 20px;
+    /* border: 2px solid grey; */
+    padding: 15px;
+    box-shadow: 0px 0px 7px grey;
+}
+
+/* section  project complete */
+
+
+/* contact start */
+.contact{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+text-align: center;
+}
+.contact .contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+.contact .contact-box input,textarea{
+    width:400px;
+    height:40px;
+    margin:10px 0px;
+    padding: 5px;
+    font-size:18px;
+    border:none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+.contact .contact-box input::placeholder,textarea::placeholder{
+    color: white;
+}
+.btn{
+    padding: 1rem 3rem;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border:transparent;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 6px rgb(34, 33, 33);
+}
+.btn:hover{
+    background-color: rgba(255, 0, 0, 0.829);
+}
+.formerror{
+    color:white;
+}
+
+
+.contact h1{
+color: white;
+text-align: center;
+font-size: 3rem;
+}
+
+
+
+footer{
+    width:100%;
+    height:80%;
+    margin-bottom: 30px;
+}
+footer{
+    text-align: center;
+    font-weight: 300;
+}
+footer .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px 0px;
+}
+footer .icons i{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media only screen and (max-width:800px) {
+    .navbar ul li a{
+        font-size:12px;
+        padding:0px 10px;
+    }
+    .navbar .heading{
+        font-size: 10px;
+    }
+    .navbar ul li{
+        margin:0px 3px;
+    }
+    header .content{
+        font-size: 14px;
+        top:30%;
+        left:2%;
+    }
+    header .content button{
+font-size:10px;
+padding: 10px;
+    }
+
+
+    section .contain{
+        width:80%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+    }
+    section .row{
+        display: flex;
+        flex-direction:column ;
+    }
+    section .row .box{
+        margin: 20px;
+    }
+
+
+    section .project{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:80%;
+    }
+    .contact .contact-box{
+        width:220px;
+        height: 300px;
+        left:20%;
+    }
+    .contact .contact-box form input,textarea{
+        width:200px;
+        height:30px;
+        font-size: 15px;
+    }
+    .contact .contact-box form button{
+        padding:10px 15px;
+        font-size:15px;
+    }
+    
+    footer .icons{
+        flex-direction: column;
+        
+    }
+    footer .icons i{
+        margin: 10px 0px;
+    }
+}
+
+
+
